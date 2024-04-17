@@ -1,0 +1,95 @@
+.footer {
+  width: 100%;
+  padding: 3.2rem 0 1.6rem 0;
+  border-top: 1px solid #000000;
+  background-color: #fffef5;
+}
+
+.footer-logo-image {
+  border-radius: 500px;
+  height: 8rem;
+}
+
+.footer-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo-title {
+  font-size: 3.2rem;
+  text-decoration: none;
+}
+
+.team-info {
+  font-size: 2.4rem;
+  color: #555;
+}
+
+/* .footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+
+.nav-col {
+  padding-right: 1.6rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.footer-nav {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+} */
+
+.footer-logo:link,
+.footer-logo:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-logo:hover,
+.footer-logo:active {
+  color: #333;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #767676;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 678px) {
+  .footer-logo-image {
+    border-radius: 500px;
+    height: 6rem;
+  }
+
+  .footer-logo-title {
+    font-size: 2.4rem;
+    text-decoration: none;
+  }
+
+  .team-info {
+    font-size: 1.6rem;
+    color: #555;
+  }
+}

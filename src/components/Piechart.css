@@ -1,0 +1,46 @@
+.pie-card-container {
+  padding: 2rem;
+  width: 50%;
+}
+
+.pie-card-inner {
+  box-shadow: 0px 1px 4px 1px rgba(13, 32, 5, 0.6);
+  width: 100%;
+  height: 500px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.pie-card-flipped {
+  transform: rotateY(180deg);
+}
+
+.pie-card-front,
+.pie-card-back {
+  position: absolute;
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.pie-card-front {
+  background-image: url("../images/vs-card2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pie-card-back {
+  transform: rotateY(180deg);
+}
+
+.pie-chart-desc {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.pie-chart {
+  height: 95% !important; /* Set height */
+}

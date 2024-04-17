@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+.quiz-bg {
+  height: 100vh;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  overflow: auto;
+  text-align: center;
+}
+
+.quiz-title {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin: 9.6rem auto;
+}
+
+.quiz-container {
+  max-width: 90rem;
+  margin: 0 auto 4.8rem auto;
+  padding: 2rem 2rem 4rem 2rem;
+  background: #ffffff;
+  border-radius: 8px;
+  /* box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.6); */
+  box-shadow: 1px 1px 8px 4px rgba(12, 5, 32, 0.6);
+  text-align: center;
+}
+
+.question-section {
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.question-count {
+  font-weight: 700;
+}
+
+.answer-section {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.answer-section button {
+  display: inline-block;
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+  font-size: 2.4rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 24px;
+  background: #aed4f4;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.answer-section button:hover {
+  background: #427af3;
+  color: white;
+}
+
+.answers-summary {
+  font-family: "Rubik", sans-serif;
+}
+
+.answers-summary ul {
+  list-style: none;
+}
+
+.answers-summary li {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.correct-answer {
+  color: green;
+}
+
+.incorrect-answer {
+  color: red;
+}
+
+.reset-btn {
+  display: inline-block;
+  width: auto;
+  font-family: "Rubik", sans-serif;
+  font-size: 2.4rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 24px;
+  background: #aed4f4;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.reset-btn:hover,
+.reset-btn:focus {
+  background: #427af3;
+  color: white;
+}
+
+.back-btn {
+  display: inline-block;
+  width: auto;
+  font-family: "Rubik", sans-serif;
+  font-size: 2.4rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 24px;
+  background: #aed4f4;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}

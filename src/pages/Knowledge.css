@@ -1,0 +1,199 @@
+.kl-container {
+  max-width: 120rem;
+  padding: 3.2rem;
+  margin: 0 auto;
+  margin-bottom: 9.6rem;
+  background-color: #fffef5;
+
+  display: flex;
+  gap: 3.2rem;
+}
+
+.kl-ctgs {
+  max-width: 20%;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.kl-grid {
+  display: grid;
+  column-gap: 3.2rem;
+  row-gap: 3.2rem;
+
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.kl-ctg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  padding-bottom: 0.5rem;
+
+  background-color: #fffde8;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  overflow: hidden;
+
+  font-weight: 500;
+
+  box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.2);
+  transition: all 0.6s;
+}
+
+.kl-ctg:hover {
+  box-shadow: 0 1.6rem 3.2rem rgba(0, 0, 0, 0.2);
+}
+
+.kl-ctg p {
+  font-size: 1.6rem;
+}
+
+.kl-img {
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+.right-kl-content {
+  background-color: #fffde8;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.2);
+}
+
+.kl-content-layout {
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.kl-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.kl-content-img {
+  width: 100%;
+}
+
+.kl-title {
+  font-size: 2.4rem;
+}
+.kl-text {
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.6rem;
+}
+
+/* CONTROLS */
+.kl-btn {
+  background-color: #fff;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kl-btn--left {
+  /* In relation to PARENTE ELEMENT */
+  left: 0;
+  top: 50%;
+
+  /* In relation to ELEMENT ITSELF */
+  transform: translate(-50%, -50%);
+}
+
+.kl-btn--right {
+  right: 0;
+  top: 50%;
+
+  transform: translate(50%, -50%);
+}
+
+.kl-btn-icon {
+  height: 24px;
+  width: 24px;
+  stroke: #087f5b;
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -10px);
+
+  display: flex;
+  gap: 12px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  border: 2px solid #087f5b;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot--fill {
+  background-color: #087f5b;
+}
+
+.text-green {
+  color: green;
+}
+/* Initial state of the content, hidden */
+.right-kl-content-hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* Final state of the content, fully visible */
+.right-kl-content-visible {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.video-title {
+  font-weight: 600;
+  font-size: 3.2rem;
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in-animation {
+  animation: fadeIn 0.5s ease forwards;
+}

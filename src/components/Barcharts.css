@@ -1,0 +1,42 @@
+.card-container {
+  padding: 2rem;
+  width: 50%;
+}
+
+.card-inner {
+  box-shadow: 0px 1px 4px 1px rgba(13, 32, 5, 0.6);
+  width: 100%;
+  height: 500px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-image: url("../images/vs-card.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.chart-desc {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
